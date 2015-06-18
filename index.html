@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="main.css" type="text/css" >
+</header>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Jquery</title>
+</head>
+
+<body>
+  <div class="tab-panels">
+    <ul class="tabs">
+      <li class="active">panel1</li>
+      <li>panel2</li>
+      <li>panel3</li>
+      <li>panel4</li>
+    </ul>
+    <div id="panel1" class="panel active"> content1
+      <br/> content1
+      <br/> content1
+      <br/> content1
+      <br/> content1
+      <br/> </div>
+    <div id="panel1" class="panel"> content2
+      <br/> content2
+      <br/> content2
+      <br/> content2
+      <br/> content2
+      <br/> </div>
+    <div id="panel1" class="panel">
+      content3
+      <br/> content3
+      <br/> content3
+      <br/> content3
+      <br/> content3
+      <br/> </div>
+    <div id="panel1" class="panel"> content4
+      <br/> content4
+      <br/> content4
+      <br/> content4
+      <br/> content4
+      <br/> </div2 </div>
+
+</body>
+<footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+  function hide(){
+      $(this).hide();
+    }
+    $('.active').bind('click',hide);
+
+  });
+</script>
+</footer>
+
+</html>
